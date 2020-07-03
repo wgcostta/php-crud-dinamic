@@ -44,7 +44,13 @@
 	<section>
 		<h2>
 			<?php
-				$pagina = (isset($_GET['page']) ? $_GET['page'])
+				$pagina = (isset($_GET['page']) ? $_GET['page'] : 'home'); 
+
+				if(!array_key_exists($pagina, $paginas)){
+					$pagina = 'home';
+				}
+
+				echo $pagina;
 			?>
 		</h2>
 	</section>
