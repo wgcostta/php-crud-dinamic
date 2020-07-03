@@ -3,6 +3,7 @@
 	$paginas = ['home'=>'Minha página home aqui!',
 				'sobre'=>'Estou na pagina sobre',
 				'contato'=>''];
+
 	$paginas['contato'] = '<form><input type="text" placeholder="Seu nome..."/></form>'
 
 ?>
@@ -35,12 +36,18 @@
 	<header>
 		<?php
 			foreach ($paginas as $key => $value) {
-				echo '<a href="?page='.$key.'">'.$key.'</a>';
+				echo '<a href="?page='.$key.'">'.ucfirst($key).'</a>';
 			}
 			
 		?>
 	</header>
-
+	<section>
+		<h2>
+			<?php
+				$pagina = (isset($_GET['page']) ? $_GET['page'])
+			?>
+		</h2>
+	</section>
 </body>
 
 
