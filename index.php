@@ -50,9 +50,10 @@
 					$pagina = 'home';
 				}
 
-				echo $pagina;
+				echo ucfirst($pagina);
 			?>
 		</h2>
+		<p><?php echo $paginas[$pagina]; ?></p>
 	</section>
 </body>
 
