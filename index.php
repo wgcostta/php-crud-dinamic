@@ -2,9 +2,13 @@
 
 	$paginas = ['home'=>'Minha página home aqui!',
 				'sobre'=>'Estou na pagina sobre',
-				'contato'=>''];
+				'contato'=>'',
+				'FAQ'=>'',
+				'loja'=>'Loja Top Informática'];
 
-	$paginas['contato'] = '<form><input type="text" placeholder="Seu nome..."/></form>'
+	$paginas['contato'] = '<form><input type="text" placeholder="Seu nome..."/></form>';
+	
+	$paginas['FAQ'] = '<form><input type="text" placeholder="Sua mensagem..."/></form>';
 
 ?>
 
@@ -29,6 +33,24 @@
 			color: white;
 			font-size: 17px;
 
+		}
+
+		section {
+			max-width: 960px;
+			margin: 20px auto;
+			padding: 0 2%;
+		}
+
+		h2{
+			background-color: #069;
+			color: white;
+			padding: 8px 10px;	
+		}
+
+		p{
+			color: black;
+			margin-top: 10px;
+			font-size: 16px;
 		}
 	</style>
 </head>
