@@ -1,6 +1,8 @@
 <?php
 
-	$paginas = ['home','sobre','contato'];
+	$paginas = ['home'=>'Minha página home aqui!',
+				'sobre'=>'Estou na pagina sobre',
+				'contato'=>'<input type="text" />'];
 
 
 ?>
@@ -15,7 +17,7 @@
 </head>
 <body>
 	<?php
-		echo $paginas[0];
+		echo $paginas['contato'];
 	?>
 </body>
 
